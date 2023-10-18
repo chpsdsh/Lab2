@@ -32,7 +32,7 @@ int MinInMax(char* P, int RearrNom){  //finds MINIMUM IN MAXIMUMS
 
 void reverse(char *P, int RearrNom){ //REVERSES TAIL
         char tmp;
-        for(int i = RearrNom + 1 , p = 0; p <(strlen(P)-RearrNom - 1)/2; i++, p++){
+        for(int i = RearrNom + 1 , p = 0; p < (strlen(P)-RearrNom - 1)/2; i++, p++){
             tmp = P[i];
             P[i] = P[strlen(P) - p - 1];
             P[strlen(P) - p - 1] = tmp;
