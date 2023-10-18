@@ -50,8 +50,8 @@ void rearrangement(char *P, int N){ //REARRANGES SUBSEQUENCE
         }
         indexMinInMax = MinInMax(P,RearrNom);
         tmp = P[RearrNom];
-        P[RearrNom]= P[indexMinInMax];
-        P[indexMinInMax]= tmp;
+        P[RearrNom] = P[indexMinInMax];
+        P[indexMinInMax] = tmp;
         reverse(P,RearrNom);
         printf("%s\n",P);
 
